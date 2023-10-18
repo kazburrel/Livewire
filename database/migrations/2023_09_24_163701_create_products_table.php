@@ -22,12 +22,7 @@ return new class extends Migration
             $table->softDeletes();
         });
     }
-    // Product::create([
-    //     name
-    //     amount
-    //     description
-    //     stock
-    //     status
+     
     /**
      * Reverse the migrations.
      */

@@ -10,4 +10,9 @@ class ViewController extends Controller
     {
         return view('posts.create');
     }
+    
+    public function postProduct()
+    {
+        return view('posts.wizard');
+    }
 }

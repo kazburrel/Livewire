@@ -24,6 +24,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 // Route::view('posts/create', 'posts.create');
 Route::get('/posts/create', [ViewController::class, 'createView']);
+Route::get('/posts/wizard', [ViewController::class, 'postProduct']);
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
