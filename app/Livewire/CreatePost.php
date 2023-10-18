@@ -23,7 +23,7 @@ class CreatePost extends Component
         Post::create(
             $this->all()
         );
-        
+        // hi
         $this->success = true; 
         $this->reset('title', 'body'); 
     }
